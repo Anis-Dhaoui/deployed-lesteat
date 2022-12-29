@@ -1,0 +1,55 @@
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: -8px 0 -20px 15px;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #FFD700;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important;
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.rating-view-only:hover>input:checked~label:before{
+    opacity: 1 !important;
+    cursor: not-allowed;
+}
+
+.rating-view-only>label:hover:before{
+    opacity: 0 !important;
+    cursor: not-allowed;
+}
+
+
+#updated-comment-form textarea{
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #cbd6d0;
+    min-height: 100px;
+}
