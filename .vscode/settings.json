@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4f1cea10-6ce9-4ed5-adf0-69029bdca0f2/AppServices/subscriptions/4f1cea10-6ce9-4ed5-adf0-69029bdca0f2/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/letseatt",
+    "appService.deploySubpath": "."
+}
