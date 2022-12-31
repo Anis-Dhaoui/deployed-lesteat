@@ -20,6 +20,7 @@ var helmet = require('helmet');
 
 // Connecting with Mongodb Server
 mongoose.Promise = global.Promise;
+mongoose.set('strictQuery', true);
 const url = process.env.mongoUrl;
 const connect = mongoose.connect(process.env.MONGODB_URI || url);
 connect.then((db) => {
