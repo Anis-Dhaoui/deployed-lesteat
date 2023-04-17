@@ -47,6 +47,7 @@ app.set('view engine', 'jade');
 app.use(
   helmet({
     contentSecurityPolicy: false,
+    crossOriginResourcePolicy: false
   })
 );
 app.use(logger('dev'));
