@@ -5,4 +5,7 @@
 // export const url = 'https://localhost:3443/';
 
 // HEROKU SERVER URL
-export const url = '/';
+// export const url = '/';
+
+// RENDER SERVER URL
+export const url = 'https://letseat-api.onrender.com'
