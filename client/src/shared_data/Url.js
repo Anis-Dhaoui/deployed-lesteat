@@ -8,4 +8,4 @@
 // export const url = '/';
 
 // RENDER SERVER URL
-export const url = 'https://letseat-api.onrender.com'
+export const url = 'https://letseat-api.onrender.com/'
