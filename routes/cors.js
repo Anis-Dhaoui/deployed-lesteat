@@ -6,7 +6,7 @@ const whiteList =[
     "https://localhost:3443",
     "http://localhost:3000",
     "https://letseatt.herokuapp.com/" ,
-    "https://letseat-z2qv.onrender.com/"
+    "https://letseat-z2qv.onrender.com"
 ];
 
 var corsOptions = (req, cb) =>{
