@@ -2,7 +2,7 @@
 // export const url = 'http://localhost:3001/';
 
 // NODEJS SERVER URL
-// export const url = 'https://localhost:3443/';
+export const url = 'http://localhost:3000/';
 
 // HEROKU SERVER URL
 // export const url = '/';
@@ -11,4 +11,4 @@
 // export const url = 'https://letseat-api.onrender.com/'
 
 // DOCKER SERVER URL
-export const url = 'server'
+// export const url = 'server'
