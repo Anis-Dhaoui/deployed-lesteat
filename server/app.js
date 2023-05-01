@@ -55,7 +55,11 @@ app.use(
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+// app.use(express.session({ secret: process.env.SECRETKEY })); // session secret
+// app.use(passport.initialize());
+app.use(session({ secret: 'SECRET' }));
 app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(express.static(path.join(__dirname, 'public')));

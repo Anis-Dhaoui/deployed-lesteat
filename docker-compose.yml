@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.server
+    image: letseat-server
+    container_name: letseat-container-server
+    command: npm start
+    volumes:
+      - ./server/:/usr/src/letseat
+      # - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    # depends_on:
+    #   - mongo
+    env_file: ./server/.env
+    environment:
+      - NODE_ENV=development
+    networks:
+      - letseat-network
+
+  # mongo:
+  #   image: mongo
+  #   volumes:
+  #     - letseat_db:/data/db
+  #   ports:
+  #     - "27017:27017"
+  #   networks:
+  #     - letseat-network
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.client
+    image: letseat-client
+    container_name: letseat-container-client
+    command: yarn start
+    volumes:
+      - ./client/:/usr/app
+      # - /usr/app/node_modules
+    depends_on:
+      - server
+    ports:
+      - "3001:3001"
+    networks:
+      - letseat-network
+
+networks:
+    letseat-network:
+        driver: bridge
+
+# volumes:
+#     data-volume:
+#     node_modules:
+#     web-root:
+#       driver: local
