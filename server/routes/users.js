@@ -50,10 +50,6 @@ userRouter.post('/login', cors.corsWithOpts, (req, res, next) => {
         }
         req.logIn(user, (err) => {
           if (err) {
-            console.log("#############################################################")
-            console.log(err);
-            console.log("#############################################################")
-            
             res.statusCode = 401;
             res.setHeader('Content-Type', 'application/json');
             res.json({ success: false, status: "login unsuccessful", err: "Password is incorrect" });

@@ -131,7 +131,13 @@ plateRouter.route('/:plateId/comments')
     .catch(err => next(err))
 })
 .post(cors.corsWithOpts, auth.verifyUser, (req, res, next) =>{
-    Plates.update({_id: req.params.plateId}, {$push: {"comments": {"": req.body, author: req.user._id}}}).exec()
+
+    const newComment = {
+        author: req.user._id,
+        ...req.body
+    }
+
+    Plates.updateOne({_id: req.params.plateId}, {$push: {"comments": newComment}}, { new: true }).exec()
 
     Plates.findById(req.params.plateId)
     .populate('comments.author')
