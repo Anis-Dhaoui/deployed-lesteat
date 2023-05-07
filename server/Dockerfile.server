@@ -3,7 +3,7 @@
 FROM node:14-alpine
 
 # Create App Directory
-RUN mkdir -p /usr/src/app
+# RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/letseat/server
 
 # Install Dependencies

@@ -9,7 +9,7 @@ services:
     container_name: letseat-container-server
     command: npm start
     volumes:
-      - ./server/:/usr/src/letseat
+      - ./server/:/usr/src/letseat/server
       # - /usr/src/app/node_modules
     ports:
       - "3000:3000"
@@ -38,7 +38,7 @@ services:
     container_name: letseat-container-client
     command: yarn start
     volumes:
-      - ./client/:/usr/app
+      - ./client/:/usr/src/letseat/client
       # - /usr/app/node_modules
     depends_on:
       - server
