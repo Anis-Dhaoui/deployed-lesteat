@@ -55,7 +55,7 @@ const SlideShow = (props) => {
       >
         <img src={item.src} alt={item.altText} width="100%" height="400px" />
         <div className="carousel-overlay"></div>
-        <CarouselCaption captionText={item.altText} captionHeader={item.caption} style={{display:"block"}} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.altText} style={{display:"block"}} />
       </CarouselItem>
     );
   });
