@@ -5,8 +5,9 @@ function Footer() {
         <footer className="footer">
             <div className="footer-left col-md-4 col-sm-6">
                 <p className="about">
-                <span> About the company</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
-                ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+                <span> About Lets Eat</span>We believe in the commitment to our community and in fostering long term relationships
+                with local farmers and fishermen. Our menus reflect these connections,
+                featuring local, seasonal produce and sustainably sourced seafood and meats.
                 </p>
                 <div className="icons">
                 <a href="facebook.com"><i className="fa fa-facebook"></i></a>
@@ -19,15 +20,16 @@ function Footer() {
             <div className="footer-center col-md-4 col-sm-6">
                 <div>
                 <i className="fa fa-map-marker"></i>
-                <p><span> Street name and number</span> City, Country</p>
+                <p><span> 208 Essex Lane</span> Parlin, NJ 08859</p>
+
                 </div>
                 <div>
                 <i className="fa fa-phone"></i>
-                <p> (+00) 0000 000 000</p>
+                <p> (+1) 202-555-0174</p>
                 </div>
                 <div>
                 <i className="fa fa-envelope"></i>
-                <p><a href="/home"> office@company.com</a></p>
+                <p><a href="/home"> jane@letseat.com</a></p>
                 </div>
             </div>
             <div className="footer-right col-md-4 col-sm-6">
@@ -38,7 +40,7 @@ function Footer() {
                 <Link to="/menu"> Menu</Link> |
                 <Link to="/contact"> Contact</Link>
                 </p>
-                <p className="name"> Let's Eat &copy; 2018</p>
+                <p className="name"> Let's Eat &copy; 2023</p>
             </div>
         </footer>
     )
