@@ -10,18 +10,18 @@ import {
 const items = [
   {
     src: '/assets/Carousel_Images/image_1.jpg',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: 'Toad in the Hole',
+    caption: 'we think we\'re in love'
   },
   {
     src: '/assets/Carousel_Images/image_2.jpg',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'Lancashire Hot Pot',
+    caption: 'perfect fuel'
   },
   {
     src: '/assets/Carousel_Images/image_3.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'Steak and Kidney Pie',
+    caption: 'good food, good mood'
   }
 ];
 
