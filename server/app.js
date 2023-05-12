@@ -43,7 +43,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// This disables the `contentSecurityPolicy` middleware but keeps the rest.
+// This disables the `contentSecurityPolicy and ...` middleware but keeps the rest.
 app.use(
   helmet({
     contentSecurityPolicy: false,
